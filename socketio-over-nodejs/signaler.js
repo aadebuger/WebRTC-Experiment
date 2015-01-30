@@ -24,7 +24,7 @@ var io = require('socket.io').listen(app, {
 
 io.set('transports', [
      'websocket',
-    'xhr-polling',
+  //  'xhr-polling',
     'jsonp-polling'
 ]);
 
