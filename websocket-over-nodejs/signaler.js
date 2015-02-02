@@ -48,7 +48,7 @@ function onRequest(socket) {
 }
 
 function onMessage(message, websocket) {
-    console.log("message="+message);
+    console.log("message="+JSON.stringify(message));
     if (message.checkPresence)
         checkPresence(message, websocket);
     else if (message.open)
